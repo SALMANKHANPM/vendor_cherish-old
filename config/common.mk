@@ -267,6 +267,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Customization
 #include vendor/google-customization/config.mk
 
+# Audio
+include vendor/cherish/config/audio.mk
+
 # Fonts
 include vendor/cherish/config/fonts.mk
 
