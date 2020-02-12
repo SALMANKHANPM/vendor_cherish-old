@@ -267,4 +267,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Customization
 #include vendor/google-customization/config.mk
 
+# Fonts
+include vendor/cherish/config/fonts.mk
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
