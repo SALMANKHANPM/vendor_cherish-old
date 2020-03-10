@@ -243,8 +243,9 @@ endif
 # Plugins
 include packages/apps/PotatoPlugins/plugins.mk
 
-#Terminal
+# Packages
 PRODUCT_PACKAGES += \
+    Seedvault \
     Terminal
 
   # Required packages
