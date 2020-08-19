@@ -210,7 +210,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/cherish/apex
 
 PRODUCT_PACKAGES += \
-    ModuleMetadataGooglePrebuilt
+    ModuleMetadataGoogle
 
 # Branding
 include vendor/cherish/config/branding.mk
