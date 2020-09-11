@@ -205,13 +205,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 #PRODUCT_PACKAGES += NoCutoutOverlay
 #endif
 
-# Enable Google Play system updates support
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/cherish/apex
-
-PRODUCT_PACKAGES += \
-    ModuleMetadataGoogle
-
 # Branding
 include vendor/cherish/config/branding.mk
 
@@ -227,6 +220,9 @@ include vendor/google/pixel/config.mk
 else
 include vendor/cherish/config/basicapps.mk
 endif
+
+# Inherit from apex config
+$(call inherit-product, vendor/cherish/config/apex.mk)
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
