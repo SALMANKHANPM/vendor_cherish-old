@@ -215,6 +215,9 @@ include vendor/cherish/config/branding.mk
 # Include CherishOS Themes Styles
 include vendor/themes/themes.mk
 
+# Flipendo
+include vendor/cherish/config/system_sepolicy.mk
+
 # OTA
 include vendor/cherish/config/ota.mk
 
