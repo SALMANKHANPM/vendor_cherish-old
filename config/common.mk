@@ -284,4 +284,7 @@ include vendor/cherish/CarrierSettings/config.mk
 PRODUCT_PACKAGES += \
     QuickAccessWallet
 
+# Apex
+$(call inherit-product, vendor/aosp/config/apex.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
