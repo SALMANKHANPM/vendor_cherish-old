@@ -280,4 +280,8 @@ include vendor/cherish/config/fonts.mk
 # CarrierSettings
 include vendor/cherish/CarrierSettings/config.mk
 
+# SystemUI plugins
+PRODUCT_PACKAGES += \
+    QuickAccessWallet
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
