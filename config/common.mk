@@ -172,10 +172,15 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     NexusLauncherRelease
 
-# PixelSetupWizard overlay
+# RRO Overlays
 PRODUCT_PACKAGES += \
-    PixelSetupWizardAodOverlay
-
+    PixelSetupWizardAodOverlay \
+    IconPackCircularPixelLauncherOverlay \
+    IconPackCircularPixelThemePickerOverlay \
+    IconPackFilledPixelLauncherOverlay \
+    IconPackFilledPixelThemePickerOverlay \
+    IconPackRoundedPixelLauncherOverlay \
+    IconPackRoundedPixelThemePickerOverlay 
 # Custom Overlays
 # Settings
 #PRODUCT_PACKAGES += \
