@@ -147,8 +147,13 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/cherish/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/cherish/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    vendor/cherish/overlay \
+    vendor/cherish/overlay-pixel \
+
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/cherish/overlay/common \
+    vendor/cherish/overlay-pixel/common
 
 # OmniStyle
 #PRODUCT_PACKAGES += \
