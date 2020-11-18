@@ -278,6 +278,6 @@ include vendor/cherish/config/audio.mk
 include vendor/cherish/config/fonts.mk
 
 # CarrierSettings
-include vendor/aosp/CarrierSettings/config.mk
+include vendor/cherish/CarrierSettings/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
