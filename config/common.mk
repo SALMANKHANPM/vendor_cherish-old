@@ -173,9 +173,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     NexusLauncherRelease
 
 # PixelSetupWizard overlay
-#PRODUCT_PACKAGES += \
-#    PixelSetupWizardOverlay \
-#    PixelSetupWizardAodOverlay
+PRODUCT_PACKAGES += \
+    PixelSetupWizardAodOverlay
 
 # Custom Overlays
 # Settings
