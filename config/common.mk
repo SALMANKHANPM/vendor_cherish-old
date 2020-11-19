@@ -208,6 +208,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PACKAGES += \
     PixelSetupWizardAodOverlay \
 	 FilesOverlay \
+    GooglePermissionControllerOverlay \
     IconPackCircularPixelLauncherOverlay \
     IconPackCircularPixelThemePickerOverlay \
     IconPackFilledPixelLauncherOverlay \
