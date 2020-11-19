@@ -257,8 +257,7 @@ include vendor/themes/themes.mk
 include vendor/cherish/config/ota.mk
 
 ifeq ($(CHERISH_WITHGAPPS), true)
-include vendor/google/gms/config.mk
-include vendor/google/pixel/config.mk
+$(call inherit-product, vendor/gapps/config.mk)
 else
 include vendor/cherish/config/basicapps.mk
 endif
