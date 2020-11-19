@@ -207,6 +207,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # RRO Overlays
 PRODUCT_PACKAGES += \
     PixelSetupWizardAodOverlay \
+	 FilesOverlay \
     IconPackCircularPixelLauncherOverlay \
     IconPackCircularPixelThemePickerOverlay \
     IconPackFilledPixelLauncherOverlay \
