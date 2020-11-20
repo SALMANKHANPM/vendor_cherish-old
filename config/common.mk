@@ -247,9 +247,7 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += NoCutoutOverlay
 #endif
 
-# Pixel customization
-TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
-TARGET_INCLUDE_STOCK_ARCORE ?= true
+# Live Wallpapers
 TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
 ifeq ($(TARGET_INCLUDE_LIVE_WALLPAPERS),true)
 PRODUCT_PACKAGES += \
@@ -328,15 +326,6 @@ PRODUCT_PACKAGES += \
     QuickAccessWallet
 
 # Apex
-ifeq ($(TARGET_FLATTEN_APEX),false)
 $(call inherit-product, vendor/cherish/config/apex.mk)
-else
-# Hide "Google Play System Updates" if Apex disabled
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/cherish/overlay_apex_disabled
-
-DEVICE_PACKAGE_OVERLAYS += \
-    vendor/cherish/overlay_apex_disabled/common
-endif
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk

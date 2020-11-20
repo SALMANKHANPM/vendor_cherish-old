@@ -1,9 +1,8 @@
-# Overlays
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/cherish/apex/overlay
+ifeq ($(TARGET_FLATTEN_APEX),false)
 
-DEVICE_PACKAGE_OVERLAYS += \
-    vendor/cherish/apex/overlay/common
+# Overlay
+PRODUCT_PACKAGES += \
+    ApexOverlay
 
 # Enable Google Play system updates support
 PRODUCT_SOONG_NAMESPACES += \
@@ -31,3 +30,5 @@ PRODUCT_PACKAGES += \
     com.google.android.telephony \
     com.google.android.tzdata2 \
     com.google.android.wifi
+
+endif
