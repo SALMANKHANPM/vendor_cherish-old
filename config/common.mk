@@ -247,6 +247,13 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += NoCutoutOverlay
 #endif
 
+# Live Wallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
+ifeq ($(TARGET_INCLUDE_LIVE_WALLPAPERS),true)
+PRODUCT_PACKAGES += \
+    PixelLiveWallpapersOverlay
+endif
+
 # Branding
 include vendor/cherish/config/branding.mk
 
