@@ -228,6 +228,9 @@ endif
 # Inherit from apex config
 $(call inherit-product, vendor/cherish/config/apex.mk)
 
+# Pixel Style
+include vendor/pixelstyle/config.mk
+
 # Inherit from CarrierSettings
 ifneq ($(filter blueline bonito bramble coral crosshatch redfin sunfish taimen walleye,$(TARGET_DEVICE)),)
 $(call inherit-product, vendor/cherish/config/common_telephony.mk)
