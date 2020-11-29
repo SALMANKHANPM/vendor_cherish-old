@@ -36352,7 +36352,7 @@
       type="mms"
   />
 
-  <apn carrier="e-internet"
+  <apn carrier="Itelecom-internet"
       carrier_id="2179"
       mcc="452"
       mnc="08"
@@ -36360,7 +36360,7 @@
       type="default,supl"
   />
 
-  <apn carrier="e-wap"
+  <apn carrier="Itelecom-wap"
       carrier_id="2179"
       mcc="452"
       mnc="08"
@@ -36370,7 +36370,7 @@
       type="default,supl"
   />
 
-  <apn carrier="e-mms"
+  <apn carrier="Itelecom-mms"
       carrier_id="2179"
       mcc="452"
       mnc="08"
