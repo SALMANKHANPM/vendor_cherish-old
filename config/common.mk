@@ -319,7 +319,7 @@ include vendor/cherish/config/audio.mk
 include vendor/cherish/config/fonts.mk
 
 # CarrierSettings
-include vendor/cherish/CarrierSettings/config.mk
+include vendor/aosp/CarrierSettings/config.mk
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
