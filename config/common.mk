@@ -263,10 +263,10 @@ include vendor/themes/themes.mk
 # OTA
 include vendor/cherish/config/ota.mk
 
-ifeq ($(CHERISH_WITHGAPPS), true)
-$(call inherit-product, vendor/gapps/config.mk)
-else
+ifeq ($(CHERISH_NOGAPPS), true)
 include vendor/cherish/config/basicapps.mk
+else
+$(call inherit-product, vendor/gapps/config.mk)
 endif
 
 # Bootanimation
