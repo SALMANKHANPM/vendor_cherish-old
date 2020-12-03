@@ -318,9 +318,6 @@ include vendor/cherish/config/audio.mk
 # Fonts
 include vendor/cherish/config/fonts.mk
 
-# CarrierSettings
-include vendor/aosp/CarrierSettings/config.mk
-
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
