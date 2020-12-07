@@ -192,8 +192,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     vendor/cherish/overlay-pixel/common
 
 # OmniStyle
-#PRODUCT_PACKAGES += \
-#    OmniStyle
+PRODUCT_PACKAGES += \
+    OmniStyle
 
 # TouchGestures
 #PRODUCT_PACKAGES += \
