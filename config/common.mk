@@ -17,33 +17,11 @@ PRODUCT_BRAND ?= CherishOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
-ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.com.google.clientidbase=android-google
-else
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
-endif
-
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.debug.alloc=0 \
-    keyguard.no_require_sim=true \
-    media.recorder.show_manufacturer_and_model=true \
-    net.tethering.noprovisioning=true \
-    persist.sys.disable_rescue=true \
-    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
-	ro.carrier=unknown \
     ro.com.android.dataroaming=false \
     ro.com.android.dateformat=MM-dd-yyyy \
-	ro.config.bt_sco_vol_steps=30 \
-    ro.config.media_vol_steps=30 \
-    ro.error.receiver.system.apps=com.google.android.gms \
-    ro.setupwizard.enterprise_mode=1 \
-    ro.storage_manager.enabled=true \
-    ro.com.google.ime.bs_theme=true \
-    ro.com.google.ime.theme_id=5 \
-    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
-    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+    persist.sys.disable_rescue=true \
 
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
@@ -52,10 +30,6 @@ else
 # Enable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
-
-# Ambient Play
-#PRODUCT_PACKAGES += \
-#    AmbientPlayHistoryProvider
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -72,12 +46,6 @@ PRODUCT_COPY_FILES += \
     vendor/cherish/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/cherish/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/cherish/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh
-
-# OTA
-ifneq ($(TARGET_BUILD_VARIANT),user)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.ota.allow_downgrade=true
-endif
 
 ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_COPY_FILES += \
