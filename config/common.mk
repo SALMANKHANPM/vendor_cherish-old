@@ -255,3 +255,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 #include vendor/google-customization/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
+# Packages
+include vendor/cherish/config/packages.mk
